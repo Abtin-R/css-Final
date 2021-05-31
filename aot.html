@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <!-- the head of the this includes title of page the 
+            header and the metas also it imports the external style sheet-->
+        <title></title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
+        <link rel="stylesheet" href="stylesheet/style-sheet.css">
+
+        
+    <style>
+      /*  show the starts on the sreen from the sprite sheet*/
+        #stars{ 
+            display: block;
+            margin: 0 auto;
+            background: url("images/fake_amazon.png") -10px -785px;
+            width: 190px;
+            height: 50px;
+        }
+
+
+        /*  makes the anchors inline bloack elements adds a transistion and when hovering over it makes it turn in a 360*/
+        a {
+            display: inline-block;
+            transition: transform 1s ease-in-out;
+        }
+        a:hover {
+            transform: rotate(360deg);
+        }
+        /*  this is the home button icon it is setting postion and alliging it to center*/
+        #spin{
+            position: relative;
+            
+            text-align: center;
+            
+            display: block;
+            margin: 0 auto;
+        }
+
+
+        /* animation this animates the red square at the bottom it set width height colors and it also animates it with 
+        @keyframes it will move to the right then the left*/
+        #animation{
+            float: left;
+         width: 100px;
+         height: 100px;
+         background-color: red;
+         animation-name: move;
+         animation-duration: 4s;
+         position: relative;
+         margin: 120px;
+        }
+      
+
+            @keyframes move {
+
+                 0%   {background-color:red; left:0px; top:0px;}
+                 25%  {background-color:yellow; left:50%; top:0px;}
+                 50%  {background-color:blue; left:75%; top:0px;}
+                 75%  {background-color:green; left:50%; top:0px;}
+                 100% {background-color:red; left:0%; top:0px;}
+            }
+           
+           
+            
+            
+        
+        
+        
+    </style>
+    </head>
+    <!-- home button and also links to the index page-->
+    <div id="spin">
+    <header > <a href="index.html"><img style="background:none;" src="images/home-button.png" width="50px"></a></header>
+    </div>
+    <body>    
+
+        <!-- image poster of the attack on titan poster and displays stars-->
+        <img src="images/AOT.jpg" height="400"/>
+
+        <div id="stars">
+
+        </div>
+        <p>To start I have to say that this anime is very well made. The animations are great it clearly show the amount of 
+            effort put into making it. The way that they devloped the characters is excellent. They show the pain that the kids went through 
+            while growing up. I found that the story was not easy to predict what was going to happen next. They give clues along the way in the story but 
+            when the event happens it is always unexpected. I really enjoyed watching it. the episodes have so much in such a short amount of time. One of 
+            my favorite parts about this anime is tht there were no fillers. I have nothing but good things to say about it that why I gave it <span style="color: goldenrod;"> 5 stars.</span> 
+        </p>
+
+
+        <!-- the red quare animation it will be built from the styling above in the style tag-->
+        <div id="animation">
+
+        </div>
+    </body>
+</html>
